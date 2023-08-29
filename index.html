@@ -49,12 +49,13 @@
       </section>
 
       <!-- Modal -->
-      <!-- Open the modal using ID.showModal() method -->
-      <button class="btn" onclick="show_modal_details.showModal()">open modal</button>
+      <!-- Open the modal using ID.showModal() method -->      
       <dialog id="show_modal_details" class="modal modal-bottom sm:modal-middle">
         <form method="dialog" class="modal-box">
-          <h3 class="font-bold text-lg">Hello!</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
+          <h3 id="show-detail-phone-name" class="font-bold text-lg"></h3>
+          <div id="show-detail-container">
+            
+          </div>
           <div class="modal-action">
             <!-- if there is a button in form, it will close the modal -->
             <button class="btn">Close</button>
