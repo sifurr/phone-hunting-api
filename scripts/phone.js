@@ -11,6 +11,8 @@ const displayPhones = (phones, isShowAll) => {
   // console.log(phones);
   // 1 get the div
   const phoneContainer = document.getElementById("phone-container");
+  // clear phone container cards before adding new cards
+  phoneContainer.textContent = '';
   // show all containers
   const showAllContainer = document.getElementById("show-all-container");
 
@@ -76,7 +78,7 @@ const showPhoneDetails = (phone) =>{
   <p><span>Storage: </span>${phone?.mainFeatures?.storage}</p>
   <p><span>Display Size: </span>${phone?.mainFeatures?.displaySize}</p>
   <p><span>Memory: </span>${phone?.mainFeatures?.memory}</p>
-  <p><span>GPS: </span>${phone?.others?.GPS}</p>
+  <p><span>GPS: </span>${phone?.others?.GPS || 'NO GPS'}</p>
   <p><span>Release Date: </span>${phone?.releaseDate}</p>
   <p><span>Slug: </span>${phone?.slug}</p>
   `;
